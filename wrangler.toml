@@ -1,0 +1,11 @@
+name = "personal-lotto-worker"
+main = "worker.js"
+compatibility_date = "2026-10-15"
+
+[[kv_namespaces]]
+binding = "LOTTO_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+[triggers]
+# Monday 00:00 UTC = Monday 09:00 Korea Standard Time
+crons = ["0 0 * * 1"]
